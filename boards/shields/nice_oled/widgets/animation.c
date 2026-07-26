@@ -202,6 +202,8 @@ void draw_animation(lv_obj_t *canvas, struct zmk_widget_screen *widget) {
 
 #if IS_ENABLED(CONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_VIM)
     lv_img_set_src(art, FIXED_IMAGE_VIM);
+#elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_MY_LOGO)
+    lv_img_set_src(art, FIXED_IMAGE_VIM);
 #elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_STATIC_IMAGE_PERIPHERAL_VIP_MARCOS)
     lv_img_set_src(art, FIXED_IMAGE_VIP_MARCOS);
 #else
